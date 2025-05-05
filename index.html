@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="input-container">
+    <input id="numberInput" type="number" placeholder="Enter your number">
+    <button onclick="sendNumber()">Send</button>
+  </div>
+
+  <div class="counter" id="counterBox" style="display: none;">
+    <button onclick="decrease()">−</button>
+    <div id="counterValue">0</div>
+    <button onclick="increase()">+</button>
+  </div>
+
+  <div class="color-picker" id="colorPicker">
+    <label for="colorSelect" style="font-size: 24px;">Select color</label>
+    <input type="color" id="colorSelect" onchange="changeColor()">
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
